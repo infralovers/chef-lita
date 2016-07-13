@@ -1,6 +1,6 @@
 source "<%= node['lita']['gem_primary_source'] %>"
 
-gem "rake", "1.6.4"
+gem "rack", "1.6.4"
 gem "lita"<% if node['lita']['version'] -%>, "<%= node['lita']['version_constraint'] -%> <%= node['lita']['version'] %>"<% end -%>
 
 <% node['lita']['adapters'].each do |adapter| -%>
