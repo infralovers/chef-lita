@@ -1,3 +1,5 @@
+require 'lita_rbmh_deployer'
+
 Lita.configure do |config|
   config.robot.name = <%= typecast(node['lita']['name']) %>
   config.robot.mention_name = <%= typecast(node['lita']['mention_name']) %>
